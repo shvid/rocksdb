@@ -35,7 +35,7 @@ RUN cp /usr/share/zoneinfo/America/Los_Angeles /etc/localtime && echo "America/L
 RUN apt-get -y install build-essential iotop zip libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev liblz4-dev libzstd-dev && \
     git clone https://github.com/facebook/rocksdb.git && \
     cd rocksdb && \
-    git checkout tags/v6.14.5 && \
+    git checkout tags/v6.14.6 && \
     make shared_lib && \
     mv /rocksdb/include/rocksdb /usr/include/ && \
     mv /rocksdb/librocksdb.so.* /usr/lib/ && \
